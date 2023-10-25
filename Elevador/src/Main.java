@@ -13,7 +13,7 @@ public class Main extends Thread {
 	        int numPassageiros = 5;
 	        for (int i = 0; i < numPassageiros; i++) {
 	            Passageiro passageiro = new Passageiro(elevador, i, (i + 1) % numAndares);
-	            passageiro.start();
+	            passageiro.run();
 	        }
 	}
 
